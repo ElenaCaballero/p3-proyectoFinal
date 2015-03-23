@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="birdman">../build-FinalProject-Desktop_Qt_5_3_clang_64bit-Debug/Birdman.png</file>
+        <file alias="imitation">../build-FinalProject-Desktop_Qt_5_3_clang_64bit-Debug/imitation.jpg</file>
+        <file alias="theory">../build-FinalProject-Desktop_Qt_5_3_clang_64bit-Debug/Theory.jpg</file>
+        <file alias="whiplash">../build-FinalProject-Desktop_Qt_5_3_clang_64bit-Debug/Whiplash.png</file>
+        <file>../build-FinalProject-Desktop_Qt_5_3_clang_64bit-Debug/cards.jpg</file>
+        <file>../build-FinalProject-Desktop_Qt_5_3_clang_64bit-Debug/murder.jpg</file>
+        <file>../build-FinalProject-Desktop_Qt_5_3_clang_64bit-Debug/orphan.jpg</file>
+        <file>../build-FinalProject-Desktop_Qt_5_3_clang_64bit-Debug/scandal.jpg</file>
+    </qresource>
+</RCC>
