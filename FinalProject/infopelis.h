@@ -28,7 +28,6 @@ private slots:
 private:
     Ui::InfoPelis *ui;
     int pe;
-
     vector<Movies>* pelic;
     vector<User>* usuarios;
 };

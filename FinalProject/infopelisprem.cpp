@@ -1,6 +1,8 @@
 #include "infopelisprem.h"
 #include "ui_infopelisprem.h"
 #include <QMessageBox>
+#include <QtCore>
+#include <QtGui>
 
 InfoPelisPrem::InfoPelisPrem(int p, vector<Movies>* m, vector<PremiumUser>* u, QWidget *parent) :
     QDialog(parent),
@@ -9,7 +11,6 @@ InfoPelisPrem::InfoPelisPrem(int p, vector<Movies>* m, vector<PremiumUser>* u, Q
     ui->setupUi(this);
     usuarios = u;
     pelic = m;
-    ui->setupUi(this);
     pe = p;
     if(pe == 1){
         QPixmap pixmap(":birdman");
@@ -49,27 +50,27 @@ InfoPelisPrem::~InfoPelisPrem()
     delete ui;
 }
 
-void InfoPelisPrem::on_pushButton_6_clicked()
+void InfoPelisPrem::on_close_clicked()
 {
     this->close();
 }
 
-void InfoPelisPrem::on_buyM_clicked()
-{
-    for(int i = 0; i < usuarios->size(); i++){
-        usuarios->at(i).setSpecialBalance(usuarios->at(i).Buy(14.99));
-    }
-    QMessageBox msgBox;
-    msgBox.setText("Has comprado una Pelicula.");
-    msgBox.exec();
-}
-
-void InfoPelisPrem::on_RentM_clicked()
+void InfoPelisPrem::on_pushButton_2_clicked()
 {
     for(int i = 0; i < usuarios->size(); i++){
         usuarios->at(i).setSpecialBalance(usuarios->at(i).Buy(4.99));
     }
     QMessageBox msgBox;
     msgBox.setText("Has rentado una Pelicula.");
+    msgBox.exec();
+}
+
+void InfoPelisPrem::on_pushButton_3_clicked()
+{
+    for(int i = 0; i < usuarios->size(); i++){
+        usuarios->at(i).setSpecialBalance(usuarios->at(i).Buy(14.99));
+    }
+    QMessageBox msgBox;
+    msgBox.setText("Has comprado una Pelicula.");
     msgBox.exec();
 }

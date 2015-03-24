@@ -30,12 +30,18 @@ void UsuarioPrem::on_pushButton_clicked()
 {
     PeliculasPrem pelis(premusuarios);
     pelis.exec();
+    for(int i = 0; i < premusuarios->size(); i++){
+        ui->lineEdit_2->setText(QString(premusuarios->at(i).getBalance().c_str()));
+    }
 }
 
 void UsuarioPrem::on_pushButton_2_clicked()
 {
     SeriesPrem serie(premusuarios);
     serie.exec();
+    for(int i = 0; i < premusuarios->size(); i++){
+        ui->lineEdit_2->setText(QString(premusuarios->at(i).getBalance().c_str()));
+    }
 }
 
 void UsuarioPrem::on_pushButton_3_clicked()

@@ -20,7 +20,7 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_InfoPelisPrem_t {
     QByteArrayData data[5];
-    char stringdata[72];
+    char stringdata[80];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -30,13 +30,13 @@ struct qt_meta_stringdata_InfoPelisPrem_t {
 static const qt_meta_stringdata_InfoPelisPrem_t qt_meta_stringdata_InfoPelisPrem = {
     {
 QT_MOC_LITERAL(0, 0, 13),
-QT_MOC_LITERAL(1, 14, 23),
-QT_MOC_LITERAL(2, 38, 0),
-QT_MOC_LITERAL(3, 39, 15),
-QT_MOC_LITERAL(4, 55, 16)
+QT_MOC_LITERAL(1, 14, 16),
+QT_MOC_LITERAL(2, 31, 0),
+QT_MOC_LITERAL(3, 32, 23),
+QT_MOC_LITERAL(4, 56, 23)
     },
-    "InfoPelisPrem\0on_pushButton_6_clicked\0"
-    "\0on_buyM_clicked\0on_RentM_clicked"
+    "InfoPelisPrem\0on_close_clicked\0\0"
+    "on_pushButton_2_clicked\0on_pushButton_3_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -71,9 +71,9 @@ void InfoPelisPrem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
     if (_c == QMetaObject::InvokeMetaMethod) {
         InfoPelisPrem *_t = static_cast<InfoPelisPrem *>(_o);
         switch (_id) {
-        case 0: _t->on_pushButton_6_clicked(); break;
-        case 1: _t->on_buyM_clicked(); break;
-        case 2: _t->on_RentM_clicked(); break;
+        case 0: _t->on_close_clicked(); break;
+        case 1: _t->on_pushButton_2_clicked(); break;
+        case 2: _t->on_pushButton_3_clicked(); break;
         default: ;
         }
     }

@@ -1,6 +1,8 @@
 #include "infoseriesprem.h"
 #include "ui_infoseriesprem.h"
 #include <QMessageBox>
+#include <QtCore>
+#include <QtGui>
 
 InfoSeriesPrem::InfoSeriesPrem(int s, vector<TVSeries>* m, vector<PremiumUser>* u, QWidget *parent) :
     QDialog(parent),
@@ -9,7 +11,6 @@ InfoSeriesPrem::InfoSeriesPrem(int s, vector<TVSeries>* m, vector<PremiumUser>* 
     ui->setupUi(this);
     usuarios = u;
     pelic = m;
-    ui->setupUi(this);
     se = s;
     if(se == 1){
         QPixmap pixmap("::/../build-FinalProject-Desktop_Qt_5_3_clang_64bit-Debug/cards.jpg");
@@ -51,11 +52,6 @@ InfoSeriesPrem::~InfoSeriesPrem()
     delete ui;
 }
 
-void InfoSeriesPrem::on_pushButton_6_clicked()
-{
-    this->close();
-}
-
 void InfoSeriesPrem::on_pushButton_2_clicked()
 {
     for(int i = 0; i < usuarios->size(); i++){
@@ -76,4 +72,9 @@ void InfoSeriesPrem::on_pushButton_clicked()
     QMessageBox msgBox;
     msgBox.setText("Has comprado un todos los episodios de la serie.");
     msgBox.exec();
+}
+
+void InfoSeriesPrem::on_pushButton_6_clicked()
+{
+    this->close();
 }

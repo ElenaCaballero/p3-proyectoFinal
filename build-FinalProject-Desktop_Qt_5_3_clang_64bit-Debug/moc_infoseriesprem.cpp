@@ -32,11 +32,11 @@ static const qt_meta_stringdata_InfoSeriesPrem_t qt_meta_stringdata_InfoSeriesPr
 QT_MOC_LITERAL(0, 0, 14),
 QT_MOC_LITERAL(1, 15, 23),
 QT_MOC_LITERAL(2, 39, 0),
-QT_MOC_LITERAL(3, 40, 23),
-QT_MOC_LITERAL(4, 64, 21)
+QT_MOC_LITERAL(3, 40, 21),
+QT_MOC_LITERAL(4, 62, 23)
     },
-    "InfoSeriesPrem\0on_pushButton_6_clicked\0"
-    "\0on_pushButton_2_clicked\0on_pushButton_clicked"
+    "InfoSeriesPrem\0on_pushButton_2_clicked\0"
+    "\0on_pushButton_clicked\0on_pushButton_6_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -71,9 +71,9 @@ void InfoSeriesPrem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
     if (_c == QMetaObject::InvokeMetaMethod) {
         InfoSeriesPrem *_t = static_cast<InfoSeriesPrem *>(_o);
         switch (_id) {
-        case 0: _t->on_pushButton_6_clicked(); break;
-        case 1: _t->on_pushButton_2_clicked(); break;
-        case 2: _t->on_pushButton_clicked(); break;
+        case 0: _t->on_pushButton_2_clicked(); break;
+        case 1: _t->on_pushButton_clicked(); break;
+        case 2: _t->on_pushButton_6_clicked(); break;
         default: ;
         }
     }

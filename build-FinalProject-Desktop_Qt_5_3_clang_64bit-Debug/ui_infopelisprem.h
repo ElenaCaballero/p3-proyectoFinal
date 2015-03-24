@@ -26,13 +26,11 @@ class Ui_InfoPelisPrem
 {
 public:
     QLabel *label_3;
-    QPushButton *buyM;
     QPushButton *foto;
     QLineEdit *resena;
     QLineEdit *fecha;
     QLabel *label_4;
     QLineEdit *clasi;
-    QPushButton *pushButton_6;
     QTextEdit *descri;
     QLabel *label_2;
     QLabel *label_5;
@@ -41,10 +39,12 @@ public:
     QLineEdit *estudio;
     QLabel *label_6;
     QLabel *label;
-    QPushButton *RentM;
     QLineEdit *titulo;
     QLineEdit *genero;
     QLabel *label_8;
+    QPushButton *close;
+    QPushButton *pushButton_2;
+    QPushButton *pushButton_3;
 
     void setupUi(QDialog *InfoPelisPrem)
     {
@@ -54,9 +54,6 @@ public:
         label_3 = new QLabel(InfoPelisPrem);
         label_3->setObjectName(QStringLiteral("label_3"));
         label_3->setGeometry(QRect(30, 280, 59, 16));
-        buyM = new QPushButton(InfoPelisPrem);
-        buyM->setObjectName(QStringLiteral("buyM"));
-        buyM->setGeometry(QRect(200, 390, 141, 32));
         foto = new QPushButton(InfoPelisPrem);
         foto->setObjectName(QStringLiteral("foto"));
         foto->setEnabled(true);
@@ -77,9 +74,6 @@ public:
         clasi->setObjectName(QStringLiteral("clasi"));
         clasi->setGeometry(QRect(420, 280, 113, 21));
         clasi->setReadOnly(true);
-        pushButton_6 = new QPushButton(InfoPelisPrem);
-        pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
-        pushButton_6->setGeometry(QRect(40, 390, 115, 32));
         descri = new QTextEdit(InfoPelisPrem);
         descri->setObjectName(QStringLiteral("descri"));
         descri->setGeometry(QRect(130, 220, 401, 51));
@@ -107,9 +101,6 @@ public:
         label = new QLabel(InfoPelisPrem);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(30, 180, 59, 16));
-        RentM = new QPushButton(InfoPelisPrem);
-        RentM->setObjectName(QStringLiteral("RentM"));
-        RentM->setGeometry(QRect(400, 390, 115, 32));
         titulo = new QLineEdit(InfoPelisPrem);
         titulo->setObjectName(QStringLiteral("titulo"));
         titulo->setGeometry(QRect(100, 180, 431, 21));
@@ -121,6 +112,15 @@ public:
         label_8 = new QLabel(InfoPelisPrem);
         label_8->setObjectName(QStringLiteral("label_8"));
         label_8->setGeometry(QRect(320, 340, 59, 16));
+        close = new QPushButton(InfoPelisPrem);
+        close->setObjectName(QStringLiteral("close"));
+        close->setGeometry(QRect(30, 390, 115, 32));
+        pushButton_2 = new QPushButton(InfoPelisPrem);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButton_2->setGeometry(QRect(210, 390, 115, 32));
+        pushButton_3 = new QPushButton(InfoPelisPrem);
+        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
+        pushButton_3->setGeometry(QRect(404, 390, 131, 32));
 
         retranslateUi(InfoPelisPrem);
 
@@ -131,17 +131,17 @@ public:
     {
         InfoPelisPrem->setWindowTitle(QApplication::translate("InfoPelisPrem", "Dialog", 0));
         label_3->setText(QApplication::translate("InfoPelisPrem", "Resena:", 0));
-        buyM->setText(QApplication::translate("InfoPelisPrem", "Comprar ($14.99)", 0));
         foto->setText(QString());
         label_4->setText(QApplication::translate("InfoPelisPrem", "Clasificacion:", 0));
-        pushButton_6->setText(QApplication::translate("InfoPelisPrem", "Cerrar", 0));
         label_2->setText(QApplication::translate("InfoPelisPrem", "Descripcion:", 0));
         label_5->setText(QApplication::translate("InfoPelisPrem", "Genero:", 0));
         label_7->setText(QApplication::translate("InfoPelisPrem", "Fecha de Lanzamiento: ", 0));
         label_6->setText(QApplication::translate("InfoPelisPrem", "Estudio:", 0));
         label->setText(QApplication::translate("InfoPelisPrem", "Titulo:", 0));
-        RentM->setText(QApplication::translate("InfoPelisPrem", "Alquilar ($4.99)", 0));
         label_8->setText(QApplication::translate("InfoPelisPrem", "HD:", 0));
+        close->setText(QApplication::translate("InfoPelisPrem", "Cerrar", 0));
+        pushButton_2->setText(QApplication::translate("InfoPelisPrem", "Rentar ($4.99)", 0));
+        pushButton_3->setText(QApplication::translate("InfoPelisPrem", "Comprar ($14.99)", 0));
     } // retranslateUi
 
 };

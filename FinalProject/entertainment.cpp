@@ -34,7 +34,7 @@ string Entertainment::getDescription()const{
 }
 string Entertainment::getReview()const{
     stringstream ss;
-    ss << review;
+    ss << review << " estrellas";
     return ss.str();
 }
 string Entertainment::getRating()const{
